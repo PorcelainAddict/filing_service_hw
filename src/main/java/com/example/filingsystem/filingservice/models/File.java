@@ -45,6 +45,10 @@ public class File {
         return folder;
     }
 
+    public void setFolder(Folder folder) {
+        this.folder = folder;
+    }
+
     public Long getId() {
         return id;
     }

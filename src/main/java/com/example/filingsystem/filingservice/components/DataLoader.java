@@ -28,7 +28,7 @@ public class DataLoader implements ApplicationRunner {
     public void run(ApplicationArguments args) {
 
         User Alan = new User("Alan");
-
+        userRepository.save(Alan);
         Folder folderSecretPlans = new Folder("Secret Plans", Alan);
         folderRepository.save(folderSecretPlans);
         File secret = new File("Secret", "super", 520, folderSecretPlans);
